@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#030712">
+  <title>Our Services | Signage & Branding Solutions</title>
+  <meta name="description" content="View product specifications and details for ACP boards, 3D letter signs, LED display signages, glow signs, and large-scale printing solutions.">
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="stylesheet" href="index.css?v=2.3">
+  <style>
+    .service-detail-section {
+      border-bottom: 1px solid var(--card-border);
+      padding: 80px 0;
+    }
+    .service-detail-section:nth-child(even) {
+      background-color: var(--card-bg);
+    }
+    .service-row {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    @media (min-width: 1024px) {
+      .service-row {
+        flex-direction: row;
+        align-items: center;
+      }
+      .service-row.reverse {
+        flex-direction: row-reverse;
+      }
+    }
+    .service-media, .service-desc-side {
+      width: 100%;
+    }
+    @media (min-width: 1024px) {
+      .service-media, .service-desc-side {
+        width: 50%;
+      }
+    }
+    .service-media-card {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      aspect-ratio: 1.5;
+    }
+    .service-media-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .spec-list {
+      list-style: none;
+      margin: 20px 0 30px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .spec-item {
+      font-size: 14px;
+      color: var(--muted-foreground);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .spec-item::before {
+      content: '✓';
+      color: var(--secondary);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preloader Screen (Quick Fade for Subpages) -->
+  <div id="preloader" class="loaded"></div>
+
+  <div class="grid-bg"></div>
+
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span style="font-size: 20px; font-weight: 800; letter-spacing: 0.08em; color: #fff; text-transform: uppercase;">SKY<span style="color: var(--secondary);">ADVERTISING</span></span>
+    </a>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link" id="nav-home">Home</a>
+      <a href="about.html" class="nav-link" id="nav-about">About</a>
+      <a href="services.html" class="nav-link" id="nav-services">Services</a>
+      <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+    </div>
+    <div class="nav-cta" data-magnetic="true">
+      <a href="contact.html" class="btn-premium outline">Let's Connect</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle Navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </div>
+
+
+  <main style="padding-top: 120px;">
+    
+    <!-- Page Header -->
+    <section class="services-hero">
+      <div class="section-container" style="padding-bottom: 20px; text-align: center;">
+        <div class="reveal">
+          <span class="section-tag">What We Do</span>
+          <h1 class="section-title">Signage & Branding <span>Catalogue</span></h1>
+          <p style="max-width: 600px; margin: 0 auto; color: var(--muted-foreground); line-height: 1.6;">We offer comprehensive production, fabrication, printing, and installation under one roof. Review our products below and contact us for pricing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LED & ACP Signages -->
+    <section class="service-detail-section" id="led-signage">
+      <div class="section-container" style="padding: 0 6%;">
+        <div class="service-row">
+          <div class="service-media reveal">
+            <div class="service-media-card">
+              <img src="work/exp1.jpg" alt="LED Sign Boards" />
+            </div>
+          </div>
+          <div class="service-desc-side reveal">
+            <span class="section-tag">Energy Efficient</span>
+            <h2 class="vertical-name" style="font-size: 32px; margin-bottom: 12px;">LED Sign Boards & LED Displays</h2>
+            <p class="vertical-desc" style="max-width: 100%;">Our LED Signage features top-tier Samsung or Epistar LED modules coupled with premium IP67 waterproof power supply units for extreme longevity. Built using computer-aided design layout to ensure optimal pixel density, zero hot spots, and flawless uniform glow.</p>
+            <ul class="spec-list">
+              <li class="spec-item">High Lumen Output</li>
+              <li class="spec-item">IP67 Waterproofing</li>
+              <li class="spec-item">Energy Efficient 12V DC</li>
+              <li class="spec-item">Custom Acrylic Diffuser</li>
+            </ul>
+            <div class="magnetic-btn-wrap" data-magnetic="true">
+              <a href="contact.html?subject=LED%20Signage%20Inquiry" class="btn-premium solid">Inquire For Pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACP Sign Boards -->
+    <section class="service-detail-section" id="acp-boards">
+      <div class="section-container" style="padding: 0 6%;">
+        <div class="service-row reverse">
+          <div class="service-media reveal">
+            <div class="service-media-card">
+              <img src="work/ret1 (1).jpg" alt="ACP Sign Boards" />
+            </div>
+          </div>
+          <div class="service-desc-side reveal">
+            <span class="section-tag">Premium Shopfronts</span>
+            <h2 class="vertical-name" style="font-size: 32px; margin-bottom: 12px;">ACP Sign Boards & Facades</h2>
+            <p class="vertical-desc" style="max-width: 100%;">Aluminium Composite Panels (ACP) are the industry standard for modern shopfronts, franchise showrooms, and corporate building wraps. We use certified fire-grade ACP panels (brands like Aludecor, Eurobond) fabricated on heavy-duty iron frames, giving a perfectly flat, weather-resistant facade.</p>
+            <ul class="spec-list">
+              <li class="spec-item">Eurobond & Aludecor Panel</li>
+              <li class="spec-item">Rust-Proof Iron Structure</li>
+              <li class="spec-item">Weather & UV Resistant</li>
+              <li class="spec-item">CNC Routing Cutouts</li>
+            </ul>
+            <div class="magnetic-btn-wrap" data-magnetic="true">
+              <a href="contact.html?subject=ACP%20Boards%20Inquiry" class="btn-premium solid">Inquire For Pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D Letter Signs -->
+    <section class="service-detail-section" id="letter-boards">
+      <div class="section-container" style="padding: 0 6%;">
+        <div class="service-row">
+          <div class="service-media reveal">
+            <div class="service-media-card">
+              <img src="work/exp2.jpg" alt="3D Letter Sign Boards" />
+            </div>
+          </div>
+          <div class="service-desc-side reveal">
+            <span class="section-tag">Sophisticated Finish</span>
+            <h2 class="vertical-name" style="font-size: 32px; margin-bottom: 12px;">3D Letter Sign Boards</h2>
+            <p class="vertical-desc" style="max-width: 100%;">Make your logo stand out physically. We design, manufacture, and install dimensional 3D letters made from stainless steel (grade 304/316), brass, acrylic, or ACP. Letters can be halo-lit (glow on the background wall) or front-lit (diffused through translucent acrylic faces).</p>
+            <ul class="spec-list">
+              <li class="spec-item">Stainless Steel SS304</li>
+              <li class="spec-item">Classic Polished Brass</li>
+              <li class="spec-item">Laser-Cut Acrylic</li>
+              <li class="spec-item">Halo & Back-lit Effects</li>
+            </ul>
+            <div class="magnetic-btn-wrap" data-magnetic="true">
+              <a href="contact.html?subject=3D%20Letters%20Inquiry" class="btn-premium solid">Inquire For Pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flex & Vinyl Printing -->
+    <section class="service-detail-section" id="flex-vinyl">
+      <div class="section-container" style="padding: 0 6%;">
+        <div class="service-row reverse">
+          <div class="service-media reveal">
+            <div class="service-media-card">
+              <img src="work/Mumbai1.jpg" alt="Flex and Vinyl Printing" />
+            </div>
+          </div>
+          <div class="service-desc-side reveal">
+            <span class="section-tag">Mass Publicity</span>
+            <h2 class="vertical-name" style="font-size: 32px; margin-bottom: 12px;">Flex & Vinyl Printing (Solvent & Eco-Solvent)</h2>
+            <p class="vertical-desc" style="max-width: 100%;">For outdoor hoardings, retail window graphics, and internal wall branding, we offer high-resolution solvent flex printing and eco-solvent vinyl printing. Vinyl can be laminated and mounted on Sunboard (ACP / Sunboard sheet) for premium visual boards, banners, and standees.</p>
+            <ul class="spec-list">
+              <li class="spec-item">Heavy Duty Solvent Flex</li>
+              <li class="spec-item">Eco-Solvent Vinyl Printing</li>
+              <li class="spec-item">Matte / Glossy Lamination</li>
+              <li class="spec-item">Sunboard Mounting</li>
+            </ul>
+            <div class="magnetic-btn-wrap" data-magnetic="true">
+              <a href="contact.html?subject=Flex%20Printing%20Inquiry" class="btn-premium solid">Inquire For Pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Retail Branding & Glow signs -->
+    <section class="service-detail-section" id="retail-branding">
+      <div class="section-container" style="padding: 0 6%;">
+        <div class="service-row">
+          <div class="service-media reveal">
+            <div class="service-media-card">
+              <img src="https://cdn.sanity.io/images/sppqaqoh/production/f2e28715bb1e7b16a0a82b8349242ec64dbdc643-1000x665.jpg" alt="Retail Branding" />
+            </div>
+          </div>
+          <div class="service-desc-side reveal">
+            <span class="section-tag">Retail Branding</span>
+            <h2 class="vertical-name" style="font-size: 32px; margin-bottom: 12px;">Retail Branding & Glow Sign Boards</h2>
+            <p class="vertical-desc" style="max-width: 100%;">Create an immersive customer journey inside your store. We provide complete retail outlet branding including fabric lightboxes (tension fabric profiles), vinyl wall graphics, glass manifestation films, indoor standees, and classic double-sided backlit glow sign boards.</p>
+            <ul class="spec-list">
+              <li class="spec-item">Tension Fabric Lightboxes</li>
+              <li class="spec-item">Window Manifestation Vinyls</li>
+              <li class="spec-item">Promotional Standees</li>
+              <li class="spec-item">Double-Sided Glow Signs</li>
+            </ul>
+            <div class="magnetic-btn-wrap" data-magnetic="true">
+              <a href="contact.html?subject=Retail%20Branding%20Inquiry" class="btn-premium solid">Inquire For Pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span style="font-size: 20px; font-weight: 800; letter-spacing: 0.08em; color: #fff; text-transform: uppercase; margin-bottom: 12px; display: block;">SKY<span style="color: var(--secondary);">ADVERTISING</span></span>
+          <p>End-to-end signage and branding solutions trusted by corporate brands, retail chains, commercial complexes, and hospitality companies across India.</p>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-links-col">
+            <span class="footer-col-title">Navigation</span>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+          <div class="footer-links-col">
+            <span class="footer-col-title">Legal Pages</span>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <a href="terms.html" class="footer-link">Terms of Service</a>
+            <a href="refund.html" class="footer-link">Refund Policy</a>
+            <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Sky Advertising. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/_sky_advertising/" target="_blank" class="footer-social-icon">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
