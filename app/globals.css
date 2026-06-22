@@ -870,7 +870,8 @@ section {
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 120px;
+  min-width: 140px;
+  padding: 0 20px;
 }
 
 .ticker-item img {
@@ -892,6 +893,24 @@ section {
 .ticker-item img:hover {
   opacity: 0.95;
   filter: none !important;
+}
+
+.ticker-text-logo {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--muted-foreground);
+  opacity: 0.45;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.ticker-item:hover .ticker-text-logo {
+  opacity: 0.95;
+  color: var(--secondary);
+  transform: scale(1.05);
 }
 
 @keyframes scrollTicker {
@@ -1056,20 +1075,67 @@ section {
     width: 30%;
   }
 }
-
-.vertical-logo-wrapper {
-  width: 180px;
-  height: 100px;
+/* Product Showcase Image for Verticals */
+.vertical-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.5s ease;
+  margin: 15px 0;
 }
 
-.vertical-logo-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.image-radial-glow {
+  position: absolute;
+  inset: -15px;
+  filter: blur(28px);
+  border-radius: 20px;
+  pointer-events: none;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.image-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-overlay-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  pointer-events: none;
+  transition: border-color 0.5s ease;
+}
+
+/* Hover effects */
+.verticals-display:hover .image-frame {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.verticals-display:hover .image-frame img {
+  transform: scale(1.08);
+}
+
+.verticals-display:hover .image-radial-glow {
+  opacity: 0.55;
 }
 
 .vertical-info-side {

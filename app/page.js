@@ -20,54 +20,41 @@ function Reveal({ children, delay = 0, y = 30 }) {
 
 // Client brand logos data
 const brandLogos = [
-  { file: "apple.png", name: "Apple" },
-  { file: "bosch.png", name: "Bosch" },
-  { file: "brother.png", name: "Brother" },
-  { file: "DAIKIN.png", name: "Daikin" },
-  { file: "samsung.png", name: "Samsung" },
-  { file: "eureka-forbes.png", name: "Eureka Forbes" },
-  { file: "icici_bank.png", name: "ICICI Bank" },
-  { file: "aditya_birla_capital.png", name: "Aditya Birla Capital" },
-  { file: "au small finance bank.png", name: "AU Small Finance Bank" },
-  { file: "idfc_bank.png", name: "IDFC Bank" },
-  { file: "iifl finance.png", name: "IIFL Finance" },
-  { file: "standard chartered.png", name: "Standard Chartered" },
-  { file: "Force_Motors.png", name: "Force Motors" },
-  { file: "Tata-Motors.png", name: "Tata Motors" },
-  { file: "nissan.png", name: "Nissan" },
-  { file: "renault.png", name: "Renault" },
-  { file: "volkwagen.png", name: "Volkswagen" },
-  { file: "goodrej_properties.png", name: "Godrej Properties" },
-  { file: "tata realty.png", name: "Tata Realty" },
-  { file: "sobha.png", name: "Sobha" },
-  { file: "house of hiranandani.png", name: "House of Hiranandani" },
-  { file: "kolte patil.png", name: "Kolte Patil" },
-  { file: "britannia.png", name: "Britannia" },
-  { file: "MTR_LOGO.png", name: "MTR" },
-  { file: "Skechers.png", name: "Skechers" },
-  { file: "provogue.png", name: "Provogue" },
-  { file: "BJP-logo.png", name: "BJP" },
-  { file: "the-karnataka-government-kannada.png", name: "Government of Karnataka" },
-  { file: "balmer lawrine.png", name: "Balmer Lawrie" },
-  { file: "Indian_National_Congress.png", name: "Indian National Congress" },
-  { file: "Reserve_Bank_of_India_logo.png", name: "Reserve Bank of India" },
-  { file: "mofpi.png", name: "MOFPI" },
-  { file: "jsw.png", name: "JSW" },
-  { file: "Reliance-Industries-Limited-Logo.png", name: "Reliance Industries" },
-  { file: "Ultratech_Cement_vector_Logo.png", name: "UltraTech Cement" },
-  { file: "air asia.png", name: "Air Asia" },
-  { file: "PVR_INOX.png", name: "PVR INOX" },
-  { file: "essar.png", name: "Essar" },
-  { file: "sky jumper.png", name: "Sky Jumper" },
-  { file: "The_Himalaya.png", name: "Himalaya" },
-  { file: "pepsi.png", name: "Pepsi" },
-  { file: "dabur.png", name: "Dabur" },
-  { file: "baskin robbins.png", name: "Baskin Robbins" },
-  { file: "house of anita dongre.png", name: "House of Anita Dongre" },
-  { file: "Aditya_Birla_Fashion_and_Retail.png", name: "Aditya Birla Fashion & Retail" },
-  { file: "puma.png", name: "Puma" },
-  { file: "arvind fashioning.png", name: "Arvind Fashioning" }
+  { file: "", name: "Baba Ilaychi" },
+  { file: "", name: "Beetel" },
+  { file: "", name: "Blank Slate" },
+  { file: "", name: "Cars 24" },
+  { file: "", name: "Castrol" },
+  { file: "", name: "CNVRS8" },
+  { file: "", name: "Croma" },
+  { file: "", name: "Duravit" },
+  { file: "eureka-forbes.png", name: "Euroka forbes" },
+  { file: "", name: "FCUK" },
+  { file: "", name: "Frooti" },
+  { file: "", name: "HCL" },
+  { file: "", name: "I Ball" },
+  { file: "", name: "Itel" },
+  { file: "", name: "INTEX" },
+  { file: "", name: "Jelly & Deo" },
+  { file: "", name: "KENT" },
+  { file: "", name: "Lapcare" },
+  { file: "", name: "Lava Mobile" },
+  { file: "", name: "Lemon Mobiles" },
+  { file: "", name: "LG" },
+  { file: "", name: "Livepure RO" },
+  { file: "", name: "Nova" },
+  { file: "", name: "Okaya" },
+  { file: "", name: "Polycab" },
+  { file: "", name: "Power Zone" },
+  { file: "", name: "Rahimafrooz" },
+  { file: "", name: "Ramsons" },
+  { file: "", name: "Servokon" },
+  { file: "", name: "Stanza Living" },
+  { file: "", name: "TLG India" },
+  { file: "", name: "Videotex USHA LED TV" },
+  { file: "", name: "Zoppo Mobile" }
 ];
+
 
 // Interactive verticals data
 const verticalsData = [
@@ -135,6 +122,47 @@ const verticalsData = [
     number: "07"
   }
 ];
+// Render custom visual representation for each vertical category
+const renderVisualElement = (id, accent) => {
+  const getImagePath = () => {
+    switch(id) {
+      case "1": return "/work/led_signage.png";
+      case "2": return "/work/acp_signage.png";
+      case "3": return "/work/three_d_letters.png";
+      case "4": return "/work/flex_printing.png";
+      case "5": return "/work/vinyl_printing.png";
+      case "6": return "/work/glow_sign_board.png";
+      case "7": return "/work/retail_branding.png";
+      default: return "";
+    }
+  };
+
+  const getAltText = () => {
+    switch(id) {
+      case "1": return "LED Signage Showcase";
+      case "2": return "ACP Sign Board Showcase";
+      case "3": return "3D Letter Sign Showcase";
+      case "4": return "Flex Printing Showcase";
+      case "5": return "Vinyl Printing Showcase";
+      case "6": return "Glow Sign Board Showcase";
+      case "7": return "Retail Branding Showcase";
+      default: return "";
+    }
+  };
+
+  const imgPath = getImagePath();
+  if (!imgPath) return null;
+
+  return (
+    <div className="vertical-image-wrapper">
+      <div className="image-radial-glow" style={{ background: `radial-gradient(circle, hsla(${accent} / 0.4) 0%, transparent 70%)` }}></div>
+      <div className="image-frame" style={{ boxShadow: `0 15px 35px rgba(0, 0, 0, 0.4), 0 0 15px hsla(${accent} / 0.1)` }}>
+        <img src={imgPath} alt={getAltText()} loading="lazy" />
+        <div className="image-overlay-glow" style={{ border: `1.5px solid hsla(${accent} / 0.25)` }}></div>
+      </div>
+    </div>
+  );
+};
 
 export default function Home() {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -463,13 +491,21 @@ export default function Home() {
           <div className="ticker-track">
             {brandLogos.map((logo, index) => (
               <div className="ticker-item" key={index}>
-                <img src={`/logos/${logo.file}`} alt={logo.name} loading="lazy" />
+                {logo.file ? (
+                  <img src={`/logos/${logo.file}`} alt={logo.name} loading="lazy" />
+                ) : (
+                  <span className="ticker-text-logo">{logo.name}</span>
+                )}
               </div>
             ))}
             {/* Duplicated track for infinite loops */}
             {brandLogos.map((logo, index) => (
               <div className="ticker-item" key={`dup-${index}`}>
-                <img src={`/logos/${logo.file}`} alt={logo.name} loading="lazy" />
+                {logo.file ? (
+                  <img src={`/logos/${logo.file}`} alt={logo.name} loading="lazy" />
+                ) : (
+                  <span className="ticker-text-logo">{logo.name}</span>
+                )}
               </div>
             ))}
           </div>
@@ -514,9 +550,7 @@ export default function Home() {
                 <div className="vertical-watermark">{currentTab.number}</div>
                 <div className={`vertical-content-wrapper ${isTabAnimating ? "animating" : ""}`}>
                   <div className="vertical-logo-side">
-                    <div className="vertical-logo-wrapper">
-                      <img src={currentTab.logo} alt={`${currentTab.name} logo`} />
-                    </div>
+                    {renderVisualElement(currentTab.id, currentTab.accent)}
                   </div>
                   <div className="vertical-info-side">
                     <span 
