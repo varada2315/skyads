@@ -222,7 +222,7 @@ export default function About() {
                 <div className="timeline-badge-split" />
                 <Reveal delay={0.05} y={20}>
                   <div className="timeline-card-split">
-                    <span className="timeline-step">Stage 01 — 2016</span>
+                    <span className="timeline-step">Stage 01 — 2010</span>
                     <h3 className="timeline-title">The Foundation</h3>
                     <div className="icon-wrapper-circle" style={{ margin: "10px 0 15px 0" }}>
                       <HammerIcon />
@@ -415,23 +415,34 @@ export default function About() {
           </Reveal>
           
           <div style={{ display: "flex", justifyContent: "center" }}>
-            {/* Mohd Anas */}
+            {/* Shahzad Ali */}
             <Reveal delay={0.1}>
               <div className="leader-card-creative">
                 <div className="leader-img-wrapper-creative">
-                  <img src="/images/mohd_anas_founder.png" alt="Mohd Anas" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <img src="/images/shahzad_ali_founder.png" alt="Shahzad Ali" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                 </div>
                 <div className="leader-info">
-                  <h3 className="leader-name">Mohd Anas</h3>
-                  <p className="leader-role">Founder &amp; Director</p>
+                  <h3 className="leader-name">Shahzad Ali</h3>
+                  <p className="leader-role">Founder &amp; Proprietor</p>
                   <div style={{ color: "var(--secondary)", opacity: 0.15, height: "10px", marginBottom: "5px" }}>
                     <svg width="45" height="45" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                     </svg>
                   </div>
-                  <p className="leader-quote" style={{ borderLeft: "2px solid var(--secondary)", paddingLeft: "20px" }}>
-                    "Sky Advertising was founded to give brands a voice that stands out. We work closely with our corporate and retail clients to turn creative brand visions into physical structural masterpieces. Our commitment is quality, scale, and reliable execution everywhere."
-                  </p>
+                  <div className="leader-quote" style={{ borderLeft: "2px solid var(--secondary)", paddingLeft: "20px", fontStyle: "normal" }}>
+                    <p style={{ marginBottom: "12px" }}>
+                      Shahzad Ali is the Founder and Proprietor of Sky Advertising, a Delhi-based signage and branding company established in 2010. Originally from Bachhraon, Uttar Pradesh, he founded the company with a clear vision of providing innovative, high-quality branding and signage solutions that help businesses strengthen their market presence.
+                    </p>
+                    <p style={{ marginBottom: "12px" }}>
+                      With over a decade of experience in the advertising and signage industry, Shahzad Ali has successfully grown Sky Advertising into a trusted branding partner for businesses across India. Under his leadership, the company delivers comprehensive branding solutions.
+                    </p>
+                    <p style={{ marginBottom: "12px" }}>
+                      His dedication to quality, precision, timely project execution, and customer satisfaction has enabled Sky Advertising to work with renowned brands.
+                    </p>
+                    <p style={{ marginBottom: "0" }}>
+                      Known for his entrepreneurial vision, strong work ethic, and commitment to excellence, Shahzad Ali continues to lead Sky Advertising with the goal of becoming one of India’s most respected branding and signage companies. His focus on innovation, reliability, and long-term client relationships has been the driving force behind the company’s steady growth since its establishment in 2010.
+                    </p>
+                  </div>
                 </div>
               </div>
             </Reveal>

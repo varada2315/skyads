@@ -20,39 +20,46 @@ function Reveal({ children, delay = 0, y = 30 }) {
 
 // Client brand logos data
 const brandLogos = [
-  { file: "", name: "Baba Ilaychi" },
-  { file: "", name: "Beetel" },
-  { file: "", name: "Blank Slate" },
-  { file: "", name: "Cars 24" },
-  { file: "", name: "Castrol" },
-  { file: "", name: "CNVRS8" },
-  { file: "", name: "Croma" },
-  { file: "", name: "Duravit" },
-  { file: "eureka-forbes.png", name: "Euroka forbes" },
-  { file: "", name: "FCUK" },
-  { file: "", name: "Frooti" },
-  { file: "", name: "HCL" },
-  { file: "", name: "I Ball" },
-  { file: "", name: "Itel" },
-  { file: "", name: "INTEX" },
-  { file: "", name: "Jelly & Deo" },
-  { file: "", name: "KENT" },
-  { file: "", name: "Lapcare" },
-  { file: "", name: "Lava Mobile" },
-  { file: "", name: "Lemon Mobiles" },
-  { file: "", name: "LG" },
-  { file: "", name: "Livepure RO" },
-  { file: "", name: "Nova" },
-  { file: "", name: "Okaya" },
-  { file: "", name: "Polycab" },
-  { file: "", name: "Power Zone" },
-  { file: "", name: "Rahimafrooz" },
-  { file: "", name: "Ramsons" },
-  { file: "", name: "Servokon" },
-  { file: "", name: "Stanza Living" },
-  { file: "", name: "TLG India" },
-  { file: "", name: "Videotex USHA LED TV" },
-  { file: "", name: "Zoppo Mobile" }
+  { file: "1.png", name: "Brand 1" },
+  { file: "2.jpg.jpeg", name: "Brand 2" },
+  { file: "3.png", name: "Brand 3" },
+  { file: "4.png", name: "Brand 4" },
+  { file: "5.png", name: "Brand 5" },
+  { file: "6.png", name: "Brand 6" },
+  { file: "7.png", name: "Brand 7" },
+  { file: "8.png", name: "Brand 8" },
+  { file: "9.webp", name: "Brand 9" },
+  { file: "10.png", name: "Brand 10" },
+  { file: "11.webp", name: "Brand 11" },
+  { file: "13.png", name: "Brand 13" },
+  { file: "14.jpg.jpeg", name: "Brand 14" },
+  { file: "15.jpg.jpeg", name: "Brand 15" },
+  { file: "16.jpg.jpeg", name: "Brand 16" },
+  { file: "18.png", name: "Brand 18" },
+  { file: "19.jpg.jpeg", name: "Brand 19" },
+  { file: "20.jpg.jpeg", name: "Brand 20" },
+  { file: "22.png", name: "Brand 22" },
+  { file: "23.webp", name: "Brand 23" },
+  { file: "24.jpg.jpeg", name: "Brand 24" },
+  { file: "25.png", name: "Brand 25" },
+  { file: "26.jpg.jpeg", name: "Brand 26" },
+  { file: "27.jpg.jpeg", name: "Brand 27" },
+  { file: "28.png", name: "Brand 28" },
+  { file: "29.jpg.jpeg", name: "Brand 29" },
+  { file: "30.png", name: "Brand 30" },
+  { file: "31.png", name: "Brand 31" },
+  { file: "32.jpg.jpeg", name: "Brand 32" },
+  { file: "33.png", name: "Brand 33" },
+  { file: "34.png", name: "Brand 34" },
+  { file: "35.avif", name: "Brand 35" },
+  { file: "36.png", name: "Brand 36" },
+  { file: "37.png", name: "Brand 37" },
+  { file: "38.png", name: "Brand 38" },
+  { file: "39.jpg.jpeg", name: "Brand 39" },
+  { file: "40.jpg (1).jpeg", name: "Brand 40 Alt" },
+  { file: "40.jpg.jpeg", name: "Brand 40" },
+  { file: "AMARONN.png", name: "Amaron" },
+  { file: "iPhone-Logo-2007.png", name: "iPhone" }
 ];
 
 
@@ -492,7 +499,7 @@ export default function Home() {
             {brandLogos.map((logo, index) => (
               <div className="ticker-item" key={index}>
                 {logo.file ? (
-                  <img src={`/logos/${logo.file}`} alt={logo.name} loading="lazy" />
+                  <img src={`/brandlogos/${logo.file}`} alt={logo.name} loading="lazy" />
                 ) : (
                   <span className="ticker-text-logo">{logo.name}</span>
                 )}
@@ -502,7 +509,7 @@ export default function Home() {
             {brandLogos.map((logo, index) => (
               <div className="ticker-item" key={`dup-${index}`}>
                 {logo.file ? (
-                  <img src={`/logos/${logo.file}`} alt={logo.name} loading="lazy" />
+                  <img src={`/brandlogos/${logo.file}`} alt={logo.name} loading="lazy" />
                 ) : (
                   <span className="ticker-text-logo">{logo.name}</span>
                 )}
@@ -593,10 +600,10 @@ export default function Home() {
             <div className="achievements-border-bottom"></div>
             
             {/* Render achievements icons */}
-            {["aw1.jpg", "aw2.jpg", "aw3.jpg", "aw4.jpg", "aw5.jpg", "aw6.jpg", "aw7.jpg", "aw8.jpg", "aw9.jpg", "aw10.jpg", "aw11.jpg", "aw13.jpg"].map((file, idx) => (
-              <Reveal key={idx} delay={0.02 * idx} y={20}>
+            {brandLogos.map((logo, idx) => (
+              <Reveal key={idx} delay={0.02 * (idx % 12)} y={20}>
                 <div className="achievement-grid-item">
-                  <img src={`/awards/${file}`} alt={`Award Icon ${idx + 1}`} loading="lazy" />
+                  <img src={`/brandlogos/${logo.file}`} alt={logo.name} loading="lazy" />
                   <div className="grid-plus top-right">+</div>
                 </div>
               </Reveal>

@@ -33,6 +33,10 @@ export default function Preloader() {
       if (count >= 100) {
         clearInterval(interval);
         
+        if (typeof window !== "undefined") {
+          sessionStorage.setItem("skyads_preloaded", "true");
+        }
+        
         setTimeout(() => {
           setIsLoaded(true);
           // Dispatch event to trigger animations on the page
@@ -65,7 +69,7 @@ export default function Preloader() {
           <div className="loader-subtitle">
             <span>Sky Advertising</span>
             <div className="dot"></div>
-            <span className="est">Est. 2016</span>
+            <span className="est">Est. 2010</span>
           </div>
           <div className="loader-title-wrapper">
             <h2 className="loader-title">{words[0]}</h2>
@@ -120,7 +124,7 @@ export default function Preloader() {
         <div className="loader-subtitle">
           <span>Sky Advertising</span>
           <div className="dot"></div>
-          <span className="est">Est. 2016</span>
+          <span className="est">Est. 2010</span>
         </div>
 
         {/* Dynamic Title Slide */}
