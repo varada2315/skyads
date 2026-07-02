@@ -24,6 +24,8 @@ const brandLogos = [
   { file: "arokya.jpg", name: "Arokya" },
   { file: "hatsun.jpg", name: "Hatsun" },
   { file: "iphone_new.png", name: "iPhone" },
+  { file: "oppo.png", name: "Oppo" },
+  { file: "vivo.png", name: "Vivo" },
   { file: "37.png", name: "Philips" },
   { file: "5.png", name: "Castrol" },
   { file: "7.png", name: "Croma" },
