@@ -238,6 +238,41 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      {/* Standees Section */}
+      <section className="service-detail-section" id="standees">
+        <div className="section-container" style={{ padding: "0 6%" }}>
+          <div className="service-row reverse">
+            <div className="service-media">
+              <Reveal y={40}>
+                <div className="service-media-card">
+                  <img src="/work/standees.png" alt="Promotional Standees" />
+                </div>
+              </Reveal>
+            </div>
+            <div className="service-desc-side">
+              <Reveal delay={0.1} y={30}>
+                <span className="section-tag">Highly Portable</span>
+                <h2 className="vertical-name">Promotional Standees &amp; Display Racks</h2>
+                <p className="vertical-desc">
+                  Standees are the ultimate tool for flexible, eye-catching indoor and outdoor display advertising. We design and manufacture a wide range of promotional standees, including aluminum roll-up standees (pull-up banners), X-frame standees, and heavy-duty tripod canvas easel stands. Perfect for product launches, showrooms, mall activations, and corporate exhibitions.
+                </p>
+                <ul className="spec-list">
+                  <li className="spec-item">Aluminum Roll-Up Base</li>
+                  <li className="spec-item">High-Quality Tear-Proof Flex/Vinyl</li>
+                  <li className="spec-item">Lightweight &amp; Easy to Carry</li>
+                  <li className="spec-item">X-Stand &amp; Tripod Support</li>
+                </ul>
+                <div className="magnetic-btn-wrap">
+                  <Link href="/contact?subject=Standees%20Inquiry" className="btn-premium solid">
+                    Inquire For Pricing
+                  </Link>
+                </div>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

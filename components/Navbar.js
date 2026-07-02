@@ -58,6 +58,9 @@ export default function Navbar() {
           <Link href="/services" className={`nav-link ${isActive("/services") ? "active" : ""}`}>
             Services
           </Link>
+          <Link href="/our-works" className={`nav-link ${isActive("/our-works") ? "active" : ""}`}>
+            Our Works
+          </Link>
           <Link href="/contact" className={`nav-link ${isActive("/contact") ? "active" : ""}`}>
             Contact
           </Link>
@@ -90,6 +93,9 @@ export default function Navbar() {
         </Link>
         <Link href="/services" className="mobile-nav-link" onClick={closeMenu}>
           Services
+        </Link>
+        <Link href="/our-works" className="mobile-nav-link" onClick={closeMenu}>
+          Our Works
         </Link>
         <Link href="/contact" className="mobile-nav-link" onClick={closeMenu}>
           Contact

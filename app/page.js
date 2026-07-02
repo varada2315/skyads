@@ -20,46 +20,50 @@ function Reveal({ children, delay = 0, y = 30 }) {
 
 // Client brand logos data
 const brandLogos = [
-  { file: "1.png", name: "Brand 1" },
-  { file: "2.jpg.jpeg", name: "Brand 2" },
-  { file: "3.png", name: "Brand 3" },
-  { file: "4.png", name: "Brand 4" },
-  { file: "5.png", name: "Brand 5" },
-  { file: "6.png", name: "Brand 6" },
-  { file: "7.png", name: "Brand 7" },
-  { file: "8.png", name: "Brand 8" },
-  { file: "9.webp", name: "Brand 9" },
-  { file: "10.png", name: "Brand 10" },
-  { file: "11.webp", name: "Brand 11" },
-  { file: "13.png", name: "Brand 13" },
-  { file: "14.jpg.jpeg", name: "Brand 14" },
-  { file: "15.jpg.jpeg", name: "Brand 15" },
-  { file: "16.jpg.jpeg", name: "Brand 16" },
-  { file: "18.png", name: "Brand 18" },
-  { file: "19.jpg.jpeg", name: "Brand 19" },
-  { file: "20.jpg.jpeg", name: "Brand 20" },
-  { file: "22.png", name: "Brand 22" },
-  { file: "23.webp", name: "Brand 23" },
-  { file: "24.jpg.jpeg", name: "Brand 24" },
-  { file: "25.png", name: "Brand 25" },
-  { file: "26.jpg.jpeg", name: "Brand 26" },
-  { file: "27.jpg.jpeg", name: "Brand 27" },
-  { file: "28.png", name: "Brand 28" },
-  { file: "29.jpg.jpeg", name: "Brand 29" },
-  { file: "30.png", name: "Brand 30" },
-  { file: "31.png", name: "Brand 31" },
-  { file: "32.jpg.jpeg", name: "Brand 32" },
-  { file: "33.png", name: "Brand 33" },
-  { file: "34.png", name: "Brand 34" },
-  { file: "35.avif", name: "Brand 35" },
-  { file: "36.png", name: "Brand 36" },
-  { file: "37.png", name: "Brand 37" },
-  { file: "38.png", name: "Brand 38" },
-  { file: "39.jpg.jpeg", name: "Brand 39" },
-  { file: "40.jpg (1).jpeg", name: "Brand 40 Alt" },
-  { file: "40.jpg.jpeg", name: "Brand 40" },
+  // Famous / Top Companies
+  { file: "arokya.jpg", name: "Arokya" },
+  { file: "hatsun.jpg", name: "Hatsun" },
+  { file: "iphone_new.png", name: "iPhone" },
+  { file: "37.png", name: "Philips" },
+  { file: "5.png", name: "Castrol" },
+  { file: "7.png", name: "Croma" },
+  { file: "9.webp", name: "Eureka Forbes" },
+  { file: "25.png", name: "Polycab" },
+  { file: "4.png", name: "Cars24" },
   { file: "AMARONN.png", name: "Amaron" },
-  { file: "iPhone-Logo-2007.png", name: "iPhone" }
+  { file: "40.jpg.jpeg", name: "Saint-Gobain" },
+  { file: "11.webp", name: "Frooti" },
+  { file: "38.png", name: "OYO" },
+  { file: "19.jpg.jpeg", name: "Lava" },
+  { file: "15.jpg.jpeg", name: "Intex" },
+  { file: "14.jpg.jpeg", name: "itel" },
+  { file: "34.png", name: "Ingram Micro" },
+  { file: "35.avif", name: "Redington" },
+  { file: "22.png", name: "Livpure" },
+  { file: "39.jpg.jpeg", name: "Arun Icecreams" },
+  { file: "2.jpg.jpeg", name: "Beetel" },
+  { file: "13.png", name: "iBall" },
+
+  // Other / Niche / Less-Known Companies
+  { file: "30.png", name: "Stanza Living" },
+  { file: "36.png", name: "Amara Raja" },
+  { file: "8.png", name: "Duravit" },
+  { file: "10.png", name: "fcuk" },
+  { file: "1.png", name: "Baba Elaichi" },
+  { file: "24.jpg.jpeg", name: "Okaya" },
+  { file: "23.webp", name: "Nova" },
+  { file: "26.jpg.jpeg", name: "Powerzone" },
+  { file: "3.png", name: "Blankslate" },
+  { file: "6.png", name: "cnvrs8" },
+  { file: "16.jpg.jpeg", name: "Jelly Drink" },
+  { file: "18.png", name: "Lapcare" },
+  { file: "20.jpg.jpeg", name: "Lemon" },
+  { file: "27.jpg.jpeg", name: "Rahimafrooz" },
+  { file: "28.png", name: "Ramsons" },
+  { file: "29.jpg.jpeg", name: "Servokon" },
+  { file: "31.png", name: "TLG India" },
+  { file: "32.jpg.jpeg", name: "Videotex" },
+  { file: "33.png", name: "Zopo" }
 ];
 
 
@@ -127,6 +131,15 @@ const verticalsData = [
     description: "Tension fabric lightboxes, display standees, promo tables, canvas backdrops, and POSM materials built to optimize in-store customer experiences and drive franchise conversions.",
     accent: "225 90% 55%",
     number: "07"
+  },
+  {
+    id: "8",
+    logo: "/logos/white-WAYPOINT.png",
+    name: "Standees",
+    tagline: "Portable Promotional Displays",
+    description: "Premium roll-up standees, X-banners, and tripod display stands. Lightweight, durable, and highly portable, they are perfect for retail storefronts, events, product launches, and indoor advertising.",
+    accent: "185 90% 50%",
+    number: "08"
   }
 ];
 // Render custom visual representation for each vertical category
@@ -140,6 +153,7 @@ const renderVisualElement = (id, accent) => {
       case "5": return "/work/vinyl_printing.png";
       case "6": return "/work/glow_sign_board.png";
       case "7": return "/work/retail_branding.png";
+      case "8": return "/work/standees.png";
       default: return "";
     }
   };
@@ -153,6 +167,7 @@ const renderVisualElement = (id, accent) => {
       case "5": return "Vinyl Printing Showcase";
       case "6": return "Glow Sign Board Showcase";
       case "7": return "Retail Branding Showcase";
+      case "8": return "Standees Showcase";
       default: return "";
     }
   };
