@@ -17,169 +17,198 @@ function Reveal({ children, delay = 0, y = 30 }) {
   );
 }
 
-// Gallery images with custom categories and descriptions
+// Gallery images re-ordered to place the 12 images starting from Arun Ice Cream iCone standee first
 const galleryImages = [
-  {
-    file: "1782823764479-021a2f2e-WhatsApp_Image_2026_06_30_at_5_39_42_PM__1_.jpg",
-    title: "Arun Ice Cream Branding",
-    category: "Retail Branding",
-    description: "Complete freezer wrap and dealer board branding for Arun Ice Creams."
-  },
-  {
-    file: "1782823764683-15f99775-WhatsApp_Image_2026_06_30_at_5_39_42_PM.jpg",
-    title: "Castrol Glow Signage",
-    category: "Glow Sign Boards",
-    description: "Backlit exterior glow sign board for Castrol Modern Oil dealer shopfront."
-  },
-  {
-    file: "1782823764855-ec16a993-WhatsApp_Image_2026_06_30_at_5_39_44_PM__2_.jpg",
-    title: "Intex Backlit",
-    category: "Glow Sign Boards",
-    description: "High-visibility backlit box sign board for Intex showroom."
-  },
-  {
-    file: "1782823765005-68911fba-WhatsApp_Image_2026_06_30_at_5_39_43_PM.jpg",
-    title: "Arun Ice Cream Non-lit",
-    category: "Retail Branding",
-    description: "Non-illuminated retail dealer board for Arun Ice Creams at Banyan Tree Soda Shop."
-  },
-  {
-    file: "1782823765089-288c4430-WhatsApp_Image_2026_06_30_at_5_39_43_PM__1_.jpg",
-    title: "Intex 3D Letter",
-    category: "3D Letter Signs",
-    description: "Premium red acrylic 3D letters mounted on a lobby wall for Intex reception."
-  },
-  {
-    file: "1782823765224-c9505a0f-WhatsApp_Image_2026_06_30_at_5_39_46_PM__1_.jpg",
-    title: "Itel Mobile Backlit",
-    category: "Glow Sign Boards",
-    description: "Custom illuminated counter sign board for itel mobile retail display."
-  },
-  {
-    file: "1782823765339-b801c191-WhatsApp_Image_2026_06_30_at_5_39_44_PM__3_.jpg",
-    title: "Intex Backlit",
-    category: "Glow Sign Boards",
-    description: "Outdoor backlit sign board for Intex retail outlet."
-  },
-  {
-    file: "1782823765431-222148a1-WhatsApp_Image_2026_06_30_at_5_39_46_PM.jpg",
-    title: "Itel Mobile 3D Letter",
-    category: "3D Letter Signs",
-    description: "Dimensional 3D letter signage for itel mobile store frontage."
-  },
-  {
-    file: "1782823765515-f00fb91d-PHOTO_2026_06_30_17_59_52_2.jpg",
-    title: "Amaron Pitstop",
-    category: "Retail Branding",
-    description: "Full dealership branding and signage package for Amaron Pitstop."
-  },
-  {
-    file: "1782823765597-0b98a72e-WhatsApp_Image_2026_06_30_at_5_39_44_PM.jpg",
-    title: "Intex Branding",
-    category: "Retail Branding",
-    description: "In-store visual branding and advertising panels for Intex."
-  },
-  {
-    file: "1782823765812-876c5461-PHOTO_2026_06_30_17_59_52.jpg",
-    title: "Kent Branding",
-    category: "Retail Branding",
-    description: "Corporate showroom front branding and panels for Kent RO."
-  },
-  {
-    file: "1782823766092-4c69159c-WhatsApp_Image_2026_06_30_at_5_39_49_PM__3_.jpg",
-    title: "Amaron Pit Stop",
-    category: "Retail Branding",
-    description: "Backlit canopy and wall branding installation for Amaron Pitstop."
-  },
-  {
-    file: "1782823766218-5432a478-WhatsApp_Image_2026_06_30_at_5_39_50_PM__1_.jpg",
-    title: "Hatsun Standees",
-    category: "Standees",
-    description: "Custom printed promotional standee display for Hatsun Agro products."
-  },
-  {
-    file: "1782823766321-f3640df3-PHOTO_2026_06_30_18_01_15.jpg",
-    title: "iPhone Standee",
-    category: "Standees",
-    description: "Premium roll-up display standee for iPhone 15 Pro promo launch."
-  },
-  {
-    file: "1782823766446-d2cacf40-WhatsApp_Image_2026_06_30_at_5_39_48_PM__2_.jpg",
-    title: "Amaron Pitstop",
-    category: "Retail Branding",
-    description: "Exterior brand board and outlet wall branding for Amaron."
-  },
+  // 1. Arun Ice Cream iCone standee
   {
     file: "1782823766576-5b589329-WhatsApp_Image_2026_06_30_at_5_39_49_PM.jpg",
-    title: "Kent Branding",
-    category: "Retail Branding",
-    description: "Promotional dealer shopfront signage for Kent water purifiers."
-  },
-  {
-    file: "1782823766672-647262ed-PHOTO_2026_06_30_18_01_16.jpg",
     title: "Arun Ice Cream Standee",
     category: "Standees",
     description: "Tear-proof pull-up promotional standee for Arun Ice Creams."
   },
+  // 2. Amaron Green Formula 1 car room
   {
-    file: "1782823766793-b443adad-WhatsApp_Image_2026_06_30_at_5_39_50_PM__2_.jpg",
+    file: "1782823766672-647262ed-PHOTO_2026_06_30_18_01_16.jpg",
     title: "Amaron Branding",
     category: "Retail Branding",
     description: "In-store retail counter and display rack branding for Amaron."
   },
+  // 3. iPhone 13 Pro Alpine Green standee
+  {
+    file: "1782823766793-b443adad-WhatsApp_Image_2026_06_30_at_5_39_50_PM__2_.jpg",
+    title: "iPhone Standee",
+    category: "Standees",
+    description: "Premium roll-up display standee for iPhone 13 Pro promo launch."
+  },
+  // 4. iPhone 13 Alpine Green standee
   {
     file: "1782823766896-d7d6c46f-WhatsApp_Image_2026_06_30_at_5_39_50_PM__3_.jpg",
     title: "iPhone Standee",
     category: "Standees",
     description: "Indoor promotional standee banner for Apple iPhone."
   },
+  // 5. Ecolink fans panel orange
   {
     file: "1782823767012-c9f8fe03-WhatsApp_Image_2026_06_30_at_5_39_39_PM.jpg",
-    title: "iPhone Standee",
-    category: "Standees",
-    description: "Exhibition rollup banner standee for iPhone."
-  },
-  {
-    file: "1782823767132-1966b2f2-WhatsApp_Image_2026_06_30_at_5_39_50_PM.jpg",
     title: "Ecolink Branding",
     category: "Retail Branding",
     description: "Commercial lighting dealer board and store branding for Ecolink."
   },
+  // 6. iPhone 13 Pro blue standee
   {
-    file: "1782823767256-f49e2fa5-WhatsApp_Image_2026_06_30_at_5_39_40_PM.jpg",
+    file: "1782823767132-1966b2f2-WhatsApp_Image_2026_06_30_at_5_39_50_PM.jpg",
     title: "iPhone Standee",
     category: "Standees",
     description: "Retail showroom entrance standee for iPhone."
   },
+  // 7. Philips Srinivasa Electricals shop board
+  {
+    file: "1782823767256-f49e2fa5-WhatsApp_Image_2026_06_30_at_5_39_40_PM.jpg",
+    title: "Philips Backlit",
+    category: "Glow Sign Boards",
+    description: "Backlit exterior glow sign board for Philips electricals shopfront."
+  },
+  // 8. iPhone 15 pink standee
   {
     file: "1782823767369-0326326c-WhatsApp_Image_2026_06_30_at_5_39_51_PM.jpg",
-    title: "Philips 3D Letter",
-    category: "3D Letter Signs",
-    description: "Laser-cut acrylic 3D letter branding on front facade for Philips."
-  },
-  {
-    file: "1782823767486-81831ba9-WhatsApp_Image_2026_06_30_at_5_39_51_PM__1_.jpg",
     title: "iPhone Standee",
     category: "Standees",
     description: "Pull-up promo banner standee for iPhone sales launch."
   },
+  // 9. iPhone 15 Pro Titanium standee
+  {
+    file: "1782823767486-81831ba9-WhatsApp_Image_2026_06_30_at_5_39_51_PM__1_.jpg",
+    title: "iPhone Standee",
+    category: "Standees",
+    description: "Exhibition rollup banner standee for iPhone."
+  },
+  // 10. Philips Mahadev Galaxie shop board
   {
     file: "1782823767602-ee63acdd-WhatsApp_Image_2026_06_30_at_5_39_40_PM__2_.jpg",
     title: "Philips Backlit",
     category: "Glow Sign Boards",
     description: "Mahadev Galaxie store front backlit glow sign board for Philips."
   },
+  // 11. Castrol shop
   {
     file: "1782823767706-de06b9ea-WhatsApp_Image_2026_06_30_at_5_39_41_PM__3_.jpg",
     title: "Castrol Glow Signage",
     category: "Glow Sign Boards",
     description: "Dealer shopfront glowing billboard for Castrol Modern Oil."
   },
+  // 12. Brightstar office interior
   {
     file: "1782823767809-3a1e8999-WhatsApp_Image_2026_06_30_at_5_39_41_PM.jpg",
     title: "Brightstar Branding",
     category: "Retail Branding",
     description: "Premium custom wallpaper and corporate lobby branding for Brightstar."
+  },
+
+  // Remaining 15 items:
+  // 13. Arun Ice Cream wrap
+  {
+    file: "1782823764479-021a2f2e-WhatsApp_Image_2026_06_30_at_5_39_42_PM__1_.jpg",
+    title: "Arun Ice Cream Branding",
+    category: "Retail Branding",
+    description: "Complete freezer wrap and dealer board branding for Arun Ice Creams."
+  },
+  // 14. Castrol shop
+  {
+    file: "1782823764683-15f99775-WhatsApp_Image_2026_06_30_at_5_39_42_PM.jpg",
+    title: "Castrol Glow Signage",
+    category: "Glow Sign Boards",
+    description: "Backlit exterior glow sign board for Castrol Modern Oil dealer shopfront."
+  },
+  // 15. Intex backlit box
+  {
+    file: "1782823764855-ec16a993-WhatsApp_Image_2026_06_30_at_5_39_44_PM__2_.jpg",
+    title: "Intex Backlit",
+    category: "Glow Sign Boards",
+    description: "High-visibility backlit box sign board for Intex showroom."
+  },
+  // 16. Arun Ice Cream non-lit
+  {
+    file: "1782823765005-68911fba-WhatsApp_Image_2026_06_30_at_5_39_43_PM.jpg",
+    title: "Arun Ice Cream Non-lit",
+    category: "Retail Branding",
+    description: "Non-illuminated retail dealer board for Arun Ice Creams at Banyan Tree Soda Shop."
+  },
+  // 17. Intex 3D red letters
+  {
+    file: "1782823765089-288c4430-WhatsApp_Image_2026_06_30_at_5_39_43_PM__1_.jpg",
+    title: "Intex 3D Letter",
+    category: "3D Letter Signs",
+    description: "Premium red acrylic 3D letters mounted on a lobby wall for Intex reception."
+  },
+  // 18. Itel mobile backlit counter
+  {
+    file: "1782823765224-c9505a0f-WhatsApp_Image_2026_06_30_at_5_39_46_PM__1_.jpg",
+    title: "Itel Mobile Backlit",
+    category: "Glow Sign Boards",
+    description: "Custom illuminated counter sign board for itel mobile retail display."
+  },
+  // 19. Intex backlit shop
+  {
+    file: "1782823765339-b801c191-WhatsApp_Image_2026_06_30_at_5_39_44_PM__3_.jpg",
+    title: "Intex Backlit",
+    category: "Glow Sign Boards",
+    description: "Outdoor backlit sign board for Intex retail outlet."
+  },
+  // 20. Itel mobile 3D letters
+  {
+    file: "1782823765431-222148a1-WhatsApp_Image_2026_06_30_at_5_39_46_PM.jpg",
+    title: "Itel Mobile 3D Letter",
+    category: "3D Letter Signs",
+    description: "Dimensional 3D letter signage for itel mobile store frontage."
+  },
+  // 21. Amaron Pitstop external large shop
+  {
+    file: "1782823765515-f00fb91d-PHOTO_2026_06_30_17_59_52_2.jpg",
+    title: "Amaron Pitstop",
+    category: "Retail Branding",
+    description: "Full dealership branding and signage package for Amaron Pitstop."
+  },
+  // 22. Intex corporate lobby timeline
+  {
+    file: "1782823765597-0b98a72e-WhatsApp_Image_2026_06_30_at_5_39_44_PM.jpg",
+    title: "Intex Branding",
+    category: "Retail Branding",
+    description: "In-store visual branding and advertising panels for Intex."
+  },
+  // 23. Amaron Pitstop building with stairs
+  {
+    file: "1782823765812-876c5461-PHOTO_2026_06_30_17_59_52.jpg",
+    title: "Amaron Pitstop",
+    category: "Retail Branding",
+    description: "Exterior brand board and outlet wall branding for Amaron."
+  },
+  // 24. Hatsun Standee
+  {
+    file: "1782823766092-4c69159c-WhatsApp_Image_2026_06_30_at_5_39_49_PM__3_.jpg",
+    title: "Hatsun Standees",
+    category: "Standees",
+    description: "Custom printed promotional standee display for Hatsun Agro products."
+  },
+  // 25. iPhone 13 standee
+  {
+    file: "1782823766218-5432a478-WhatsApp_Image_2026_06_30_at_5_39_50_PM__1_.jpg",
+    title: "iPhone Standee",
+    category: "Standees",
+    description: "Indoor promotional standee banner for Apple iPhone."
+  },
+  // 26. Amaron Pitstop green shop facade
+  {
+    file: "1782823766321-f3640df3-PHOTO_2026_06_30_18_01_15.jpg",
+    title: "Amaron Pitstop",
+    category: "Retail Branding",
+    description: "Backlit canopy and wall branding installation for Amaron Pitstop."
+  },
+  // 27. Kent Mineral RO
+  {
+    file: "1782823766446-d2cacf40-WhatsApp_Image_2026_06_30_at_5_39_48_PM__2_.jpg",
+    title: "Kent Branding",
+    category: "Retail Branding",
+    description: "Corporate showroom front branding and panels for Kent RO."
   }
 ];
 
